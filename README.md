@@ -4,10 +4,10 @@ Kullanim;
 -ilk basta login.html acılmali veri tabani bagli olmadigi icin 
   kullaniciAdi:admin12
   Parola:admin12
-![Alisveris kismi](githubdosya)  
+![Alisveris kismi](githubdosya.png)  
 
-![Sepete ekle kismi](githubsepet)
+![Sepete ekle kismi](githubsepet.png)
 
-![Urun arama](githubarama)
+![Urun arama](githubarama.png)
 
-![hesap bilgileri](githubhesap)
+![hesap bilgileri](githubhesap.png)
