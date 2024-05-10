@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Toplama Sihirbazı</title>
+    <link rel="stylesheet" href="deneme.css">
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Ürün ara...">
+        <button id="search-button"><i class="bi bi-search"></i></button>
+  </div>
+  <script>
+    $("#menu").click(function () {
+  if ($(".sidebar").hasClass("active")) {
+    // ...
+    $(".search-container").hide(); // Menüyü açarken arama çubuğunu gizle
+  } else {
+    // ...
+    $(".search-container").show(); // Menüyü kapatırken arama çubuğunu göster
+  }
+});
+
+$("#search-button").click(function() {
+  var searchText = $("#search-input").val().toLowerCase();
+  $(".product-card").each(function() {
+    var productName = $(this).find(".product-name").text().toLowerCase();
+    if (productName.indexOf(searchText) !== -1) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+});
+  </script>
+</body>
+</html>

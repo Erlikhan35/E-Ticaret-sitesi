@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form class="form" autocomplete="off">
+        <div class="control">
+          <h1>Giriş yap & Kayıt ol</h1>
+        </div>
+        <div class="control block-cube block-input">
+          
+          <input name="username" type="text" placeholder="Kullanıcı adı">
+          <div class="bg-top">
+            <div class="bg-inner"> </div>
+          </div>
+         
+        </div>
+        <div class="control block-cube block-input">
+          <input name="password" type="password" placeholder="Parola">
+          <div class="bg-top">
+            <div class="bg-inner"></div>
+          </div>
+          
+        </div>
+        <button class="btn block-cube block-cube-hover" type="button">
+          <div class="bg-top">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="bg-right">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="bg">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="text">Giriş yap</div>
+        </button>
+        <button class="btn block-cube block-cube-hover" type="button" onclick="passwordname()">
+          <div class="bg-top">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="bg-right">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="bg">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="text">Kayıt ol</div>
+        </button>
+        <div class="credits">
+        
+        </div>
+      </form>
+    <script>
+      function passwordname(){
+  
+        var Realname = "admin12";
+  var Realpassword = "admin12";
+  var username = document.querySelector("[name='username']").value;
+  var password = document.querySelector("[name='password']").value;
+
+  if (username.trim() === Realname && password.trim() === Realpassword) {
+    window.location.href = "alisberi.html";
+    alert("Giriş başarılı Hoşgeldiniz!!");
+  } else {
+    alert("Şifre veya parola uymuyor");
+  }
+}
+
+ </script>
+    
+</body>
+</html>

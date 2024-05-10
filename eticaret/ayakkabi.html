@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery.js"></script>
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .forShow {
+        display: block;
+      }
+      .forHide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Logo.store</a>
+      <nav class="navbar">
+        <a href="index.html">Ana sayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="iletisim.html">Iletişim</a>
+        <a href="">Alışveriş</a>
+        <ul class="menuicon">
+          <li class="person">
+            <i class="bi bi-person-circle"></i>
+          </li>
+          <li class="search">
+            <i class="bi bi-search"></i>
+          </li>
+          <li class="sepeticon">
+            <i class="bi bi-cart4"></i>
+            <span class="sepettoplam">2</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sidebar">
+      <div class="logo-info">
+        <i class="bx bx-menu" id="menu"></i>
+        <h2 id="kategori-title"></h2>
+      </div>
+
+      <ul>
+        <li>
+          <a href="giyim.html">
+            <i class="bx bx-grid-alt"> </i>
+            <span class="title">Giyim</span>
+          </a>
+        </li>
+        <li>
+          <a href="ayakkabi.html">
+            <i class="bx bx-grid-alt"> </i>
+            <span class="title">Ayakkabı</span>
+          </a>
+        </li>
+        <li>
+          <a href="teknoloji.html">
+            <i class="bx bx-grid-alt"> </i>
+            <span class="title">Laptoplar</span>
+          </a>
+        </li>
+        <li>
+          <a href="kitap.html">
+            <i class="bx bx-grid-alt"> </i>
+            <span class="title">Kitap</span>
+          </a>
+        </li>
+        <li>
+          <a href="ceptel.html">
+            <i class="bx bx-grid-alt"> </i>
+            <span class="title">Cep telefonları</span>
+          </a>
+        </li>
+        <li>
+          <a href="ceptel.html">
+            <i class="bx bx-grid-alt"> </i>
+            <span class="title">Cep telefonları</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="kutuiste">
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="ayakkabi2.jpg"Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">Vans</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">2000 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="ayakkabi3.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">siyah adıdas</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">900 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="ayakkabi4.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">Beyaz ayakkabi</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">200 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div><div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="ayakkabi5.webp" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">columbia</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">1200 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="ayakkabi6.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">Adidas</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">790 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="product8.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">nike kosu</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">3000 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="nıke.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">Nike  Dunk High Retro Erkek Ayakkabısı</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">3000 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div><div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="conerse.webp" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">Converse</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">2700 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="nıke3.jpg"Product Image">
+        </div>
+        <div class="product-details">
+          <span class="product-category">Kategori</span>
+          <h2 class="product-name">Nike bot</h2>
+          <p class="product-description">Ürün açıklaması buraya gelecek. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="product-price">350 TL</div>
+          <div class="product-actions">
+            <button class="btn btn-add-to-cart">Sepete Ekle</button>
+            <button class="btn btn-view-details">Detayları Gör</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar2">
+       
+    </div>
+    <div class="sidebar4">
+      <form class="form" autocomplete="off">
+        <div class="control">
+          <h1>Hesap bilgileri için Giriş yap</h1>
+        </div>
+        <div class="control block-cube block-input">
+          
+          <input name="username" type="text" placeholder="Kullanıcı adı "class="textinput">
+          <div class="bg-top">
+            <div class="bg-inner"> </div>
+          </div>
+         
+        </div>
+        <div class="control block-cube block-input">
+          <input name="password" type="password" placeholder="Parola" class="textinput">
+          <div class="bg-top">
+            <div class="bg-inner"></div>
+          </div>
+          
+        </div>
+       
+        
+        <button class="btn block-cube block-cube-hover" type="button" onclick="passwordname2()">
+          <div class="bg-top">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="bg-right">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="bg">
+            <div class="bg-inner"></div>
+          </div>
+          <div class="text">Giriş yap</div>
+        </button>
+        <div class="credits">
+        
+        </div>
+      </form>
+    </div>
+    <div class="sidebar5">
+        <h2 class="giristitle">Giriş bilgileri</h2>
+         <pre class="perbilgi">
+          Kullanıcı Adı: admin12
+          Parola: admin12
+          Giriş tarihi: 
+         </pre>
+    </div>
+
+    <div class="sidebar3">
+      <div class="search-bar">
+     <!-- Arama Çubuğu -->
+      
+     <input type="text" id="searchInput" placeholder=" Ürün Ara...">
+     <!-- Arama Butonu -->
+     <button id="searchButton">Ara</button>
+     
+    </div>
+    <div class="product-cards">
+      <!-- Burada eşleşen ürünler listelenecek -->
+    </div>
+    </div>  
+     
+</div>
+   
+  </div>
+
+   
+
+    
+
+    <script src="main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#kategori-title").remove();
+
+        $("#menu").click(function () {
+          if ($(".sidebar").hasClass("active")) {
+            if ($("#kategori-title").length === 0) {
+              $(".logo-info").append(
+                "<h2 id='kategori-title'>Kategoriler</h2>"
+              );
+            }
+          } else {
+            $("#kategori-title").remove();
+          }
+        });
+      });
+      $(document).ready(function () {
+  // Sepete ikonuna tıklandığında
+  $(".bi-cart4").click(function () {
+    // Sağ tarafta genişleyen menüyü bul
+    var sidebar = $(".sidebar2");
+    // Eğer menü zaten aktifse, yani açıksa
+    if (sidebar.hasClass("active")) {
+      // Menüyü kapat
+      sidebar.removeClass("active");
+    } else {
+      // Menüyü aç
+      sidebar.addClass("active");
+    }
+  });
+  
+  // Sepete Ekle butonuna tıklandığında
+ // Sepete Ekle butonuna tıklandığında
+ $(".btn-add-to-cart").click(function() {
+  var productCard = $(this).closest(".product-card");
+  var productName = productCard.find(".product-name").text();
+  var existingProduct = $(".sidebar2").find(".product-name:contains('" + productName + "')");
+
+  if(existingProduct.length > 0) {
+    var existingCount = parseInt(existingProduct.siblings(".product-count").text().split(":")[1].trim());
+    existingProduct.siblings(".product-count").text("Adet: " + (existingCount + 1));
+  } else {
+    var productClone = productCard.clone();
+    productClone.find(".product-actions").remove();
+    productClone.find(".product-count").text("Adet: 1");
+    $(".sidebar2").append(productClone);
+  }
+});
+  // Menü dışına tıklandığında
+  $(document).mouseup(function (e) {
+    var container = $(".sidebar2");
+    // Eğer menü içeriği dışında bir yere tıklanırsa
+    if (
+      !container.is(e.target) &&
+      container.has(e.target).length === 0 &&
+      !$(".bi-cart4").is(e.target)
+    ) {
+      // Menüyü kapat
+      container.removeClass("active");
+    }
+  });
+});
+$(".btn-view-details").click(function() {
+  $(this).closest(".product-details").find(".product-description").css("color", "black");
+});
+$(document).ready(function () {
+  // Sepete ikonuna tıklandığında
+  $(".search").click(function () {
+    // Sağ tarafta genişleyen menüyü bul
+    var sidebar = $(".sidebar3");
+    // Eğer menü zaten aktifse, yani açıksa
+    if (sidebar.hasClass("active")) {
+      // Menüyü kapat
+      sidebar.removeClass("active");
+    } else {
+      // Menüyü aç
+      sidebar.addClass("active");
+    }
+  });
+});
+$(document).ready(function() {
+  $("#searchInput").on("input", function() {
+    var searchTerm = $(this).val().trim().toLowerCase(); // Arama terimini al, küçük harfe çevir ve baştaki ve sondaki boşlukları kaldır
+
+    $(".product-details").each(function() {
+      var productName = $(this).find(".product-name").text().toLowerCase(); // Ürün adını al, küçük harfe çevir
+      var productCard = $(this).closest(".container"); // Ürün kartını bul
+
+      // Arama terimi ürün adında varsa
+      if (productName.includes(searchTerm)) {
+        $(".sidebar3 .product-cards").append(productCard); // Ürün kartını sidebar3'e taşı
+      }
+    });
+  });
+});
+$(".person").click(function () {
+    // Sağ tarafta genişleyen menüyü bul
+    var sidebar = $(".sidebar4");
+    // Eğer menü zaten aktifse, yani açıksa
+    if (sidebar.hasClass("active")) {
+      // Menüyü kapat
+      sidebar.removeClass("active");
+    } else {
+      // Menüyü aç
+      sidebar.addClass("active");
+    }
+  });
+  function passwordname2() {
+  const Realname = "admin12";
+  const Realpassword = "admin12";
+  const username = document.querySelector("[name='username']").value;
+  const password = document.querySelector("[name='password']").value;
+
+  if (username.trim() === Realname && password.trim() === Realpassword) {
+    alert("Giriş başarılı Hoşgeldiniz!!");
+
+    //
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString('tr'); //
+
+    
+    const giriTarihElement = document.querySelector(".sidebar5 pre");
+    giriTarihElement.innerHTML += `Giriş tarihi: ${formattedDate}`;
+
+    const sidebar = $(".sidebar5");
+    sidebar.addClass("active");
+  } else {
+    alert("Şifre veya parola uymuyor");
+  }
+}
+ </script>
+    
+ </body>
+</html>
